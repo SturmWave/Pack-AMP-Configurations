@@ -1,26 +1,36 @@
 [
     {
-        "UpdateStageName": "LMP Download",
+        "UpdateStageName": "Server Download",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "LunaMultiplayer-Server-Release.zip",
-        "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
-        "UnzipUpdateSource": false,
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/LunaMultiplayer/LunaMultiplayer/releases/download/0.29.0/LunaMultiplayer-Server-Release.zip",
+        "UpdateSourceTarget": "serverfiles",
+        "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
+        "OneShot": true
+    },
+    {
+        "UpdateStageName": ".Net Install",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://download.visualstudio.microsoft.com/download/pr/a0832b5a-6900-442b-af79-6ffddddd6ba4/e2df0b25dd851ee0b38a86947dd0e42e/dotnet-runtime-5.0.17-win-x64.exe",
+        "UpdateSourceTarget": "serverfiles",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": false,
         "OneShot": false
     },
     {
-        "UpdateStageName": "LMP Unzipping...",
+        "UpdateStageName": ".Net Work",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "./serverfiles/LunaMultiplayer-Server-Release.zip",
-        "UpdateSourceTarget": "./serverfiles",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "./serverfiles/dotnet-runtime-5.0.17-win-x64.exe",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "LMP Download",
+        "UpdateSourceConditionSetting": ".Net Install",
         "UpdateSourceConditionValue": "true",
         "DeleteAfterExtract": true,
-        "OneShot": true
+        "OneShot": false
     }
 ]
