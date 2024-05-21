@@ -1,7 +1,7 @@
 Meta.DisplayName=Luna Multiplayer-KSP Server
 Meta.Description=
 Meta.Arch=x86_64
-Meta.AppConfigId+35f7e35b-5951-4d41-92c4-931a8ff94f60
+Meta.AppConfigId=35f7e35b-5951-4d41-92c4-931a8ff94f60
 Meta.Author=SturmWave - Made with AMP Config Generator
 Meta.URL=https://lunamultiplayer.com
 Meta.MinAMPVersion=2.4.6.6
