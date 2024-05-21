@@ -1,1 +1,25 @@
-[]
+[
+    {
+        "UpdateStageName": "Server Install",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "LunaMultiplayer-Server-Release.zip",
+        "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Unzipping...",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "./luna-multiplayer-ksp-server/serverfiles",
+        "UpdateSourceTarget": "./luna-multiplayer-ksp-server/serverfiles",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "UpdateSourceConditionSetting": "Server Install",
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
+]
