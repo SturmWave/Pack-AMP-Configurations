@@ -1,25 +1,25 @@
 [
     {
-        "UpdateStageName": "Server Install",
+        "UpdateStageName": ".Net Download",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "LunaMultiplayer-Server-Release.zip",
-        "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-5.0.17-windows-x64-installer?cid=getdotnetcore",
+        "UpdateSourceTarget": "serverfiles",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "DeleteAfterExtract": false,
+        "OneShot": true
     },
     {
-        "UpdateStageName": "Unzipping...",
+        "UpdateStageName": ".Net Install",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "./luna-multiplayer-ksp-server/serverfiles",
-        "UpdateSourceTarget": "./luna-multiplayer-ksp-server/serverfiles",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "./serverfiles/dotnet-runtime-5.0.17-win-x64.exe",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "Server Install",
+        "UpdateSourceConditionSetting": ".Net Download",
+        "UpdateSourceConditionValue": "true",
         "DeleteAfterExtract": true,
-        "OneShot": false
+        "OneShot": true
     }
 ]
