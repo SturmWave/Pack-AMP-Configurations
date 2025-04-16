@@ -1,10 +1,20 @@
 {
     "id": "2b2f13ac-422b-440d-9853-03a6adc8c64c",
     "authors": [
-        "SturmWave - Made with AMP Config Generator"
+        "SturmWave"
     ],
-    "origin": "https://github.com/SturmWave - Made with AMP Config Generator/AMPTemplates.git",
-    "url": "https://github.com/SturmWave - Made with AMP Config Generator/AMPTemplates",
+    "origin": "https://github.com/SturmWave",
+    "url": "https://github.com/SturmWave",
     "imagefile": "",
-    "prefix": "SturmWave - Made with AMP Config Generator"
+    "prefix": "SturmWave"
+}
+{
+    "id": "c9b7da8e-1038-402e-8720-6dd7da14e21f",
+    "authors": [
+        "SturmWave"
+    ],
+    "origin": "https://github.com/SturmWave",
+    "url": "https://github.com/SturmWave",
+    "imagefile": "",
+    "prefix": "SturmWave"
 }
