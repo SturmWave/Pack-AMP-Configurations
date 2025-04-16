@@ -1,0 +1,13 @@
+[
+    {
+        "UpdateStageName": "Downloading Tachyon",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://cdn.matix-media.net/dd/f2edc8e3",
+        "UpdateSourceTarget": "Tachyon Server",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
+]
