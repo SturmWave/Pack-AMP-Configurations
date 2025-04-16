@@ -4,18 +4,8 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://cdn.matix-media.net/dd/7419cd1c",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": false,
-        "OneShot": false
-    },
-    {
-        "UpdateStageName": "Extracting",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "/tachyon/7419cd1c.zip",
-        "UpdateSourceTarget": "/tachyon/serverfiles/",
-        "UnzipUpdateSource": false,
+        "UpdateSourceTarget": "serverfiles",
+        "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
         "OneShot": false
