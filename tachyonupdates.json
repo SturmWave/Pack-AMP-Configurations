@@ -4,7 +4,6 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://cdn.matix-media.net/dd/7419cd1c",
-        "UpdateSourceTarget": "Downloads",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
