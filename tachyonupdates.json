@@ -4,7 +4,17 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://cdn.matix-media.net/dd/7419cd1c",
-        "UpdateSourceTarget": "serverfiles",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": false,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Extracting",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "/7419cd1c",
+        "UpdateSourceTarget": "/serverfiles",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
